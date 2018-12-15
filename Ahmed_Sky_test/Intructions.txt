@@ -1,0 +1,3 @@
+everything is stored in the files as there was no servers used.
+1) unzip files 
+2)Run on google Chrome

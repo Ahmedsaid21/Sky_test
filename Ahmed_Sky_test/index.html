@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+  <head>
+    <meta chaset="UTF-8"/>
+    <!-- setting my title-->
+    <title>Moodslider</title>
+ 
+    <link rel="stylesheet" href= "index.css"/>
+    <!--i used 3rd party scripts for xml parsing and javascript fundamentals -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://goessner.net/download/prj/jsonxml/xml2json.js"></script>
+  </head>
+  <body>
+   
+      <header>
+        <!-- creating sky logo on top right screen-->
+        <div class=menu-container>
+          <div class="logo"><img src="images/sky.jpg" style="width: 300px"/></div>
+          <div class="menu">
+      
+            <div class="Choose file"><h3>Moodslider</h3><input type="file" id="selectfile"></div>
+          </div>
+        </div>
+      </header>
+
+<!--This will make sure my sliders are set and move in steps of 5 so there will be 3 options either left middle or right-->
+
+      <div class="slider-section">
+        <div class= "slider slider1">
+          <h3>Agitated</h3>
+            <input data-left="Agitated" data-right="Calm" type="range" Min="0" max="10" value = "5" step = "5"/>
+          <h3>Calm </h3>
+        </div>
+        <div class= "slider slider2">
+          <h3>Happy</h3>
+            <input data-left="Happy" data-right="Sad" type="range" Min="0" max="10" value = "5" step = "5"/>
+          <h3>Sad</h3>
+        </div>
+        <div class="slider slider4">
+          <h3>Tired</h3>
+            <input data-left="Tired" data-right="Wide Awake" type="range" Min="0" max="10" value = "5" step = "5"/>
+          <h3>Wide Awake</h3>
+        </div>
+        <div class="slider slider4">
+          <h3>Scared </h3>
+            <input data-left="Scared" data-right="Fearless" type="range" Min="0" max="10" value = "5" step = "5"/>
+          <h3>Fearless</h3>
+        </div>
+      </div>
+
+<!--this sets the base of where the movies will be located and sets the layout with image i have sourced as a base for where the real movies will appear-->
+
+      <div class= "movies">
+        <div class="col-lg-2 col-md-offset-1">
+          <div class="Imagebox">
+          
+              <img class="icon" src="https://www.shareicon.net/data/128x128/2016/11/24/856483_movie_512x512.png" alt="#" style="width: 100%">
+            </div>
+              <div class="Description">
+                <p class="movie-name">No Content</p>
+              </div>
+            </a>
+        </div>
+    <div class="col-lg-2">
+      <div class="Imagebox">
+     
+          <img class="icon" src="https://www.shareicon.net/data/128x128/2016/11/24/856483_movie_512x512.png" alt="#" style="width: 100%">
+        </div>
+          <div class="Description">
+            <p class="movie-name">No Content</p>
+          </div>
+        </a>
+    </div>
+    <div class="col-lg-2">
+      <div class="Imagebox">
+       
+          <img class="icon" src="https://www.shareicon.net/data/128x128/2016/11/24/856483_movie_512x512.png" alt="#" style="width: 100%">
+        </div>
+          <div class="Description">
+            <p class="movie-name">No Content</p>
+          </div>
+          </a>
+      </div>
+      <div class="col-lg-2">
+        <div class="Imagebox">
+        
+            <img class="icon" src="https://www.shareicon.net/data/128x128/2016/11/24/856483_movie_512x512.png" alt="#" style="width: 100%">
+          </div>
+            <div class="Description">
+              <p class="movie-name">No Content</p>
+            </div>
+          </a>
+      </div>
+      <div class="col-lg-2">
+        <div class="Imagebox">
+          
+            <img class="icon" src="https://www.shareicon.net/data/128x128/2016/11/24/856483_movie_512x512.png" alt="#" style="width: 100%">
+          </div>
+            <div class="Description">
+              <p class="movie-name">No Content</p>
+            </div>
+          </a>
+      </div>
+    </div>
+  </div>
+<!--this links java script page to my html page-->
+  <script src="app.js"></script>
+</body>
+</html>
